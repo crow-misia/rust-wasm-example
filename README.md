@@ -52,15 +52,15 @@ cd www
 npm install -y
 ```
 
-2. package.jsonの依存関係にpkgディレクトリを追加する
-
-``my-project/www/package.json``ファイルを開き、以下の行を追加する
+2. wasmのモジュールを、nodeのモジュールとしてリンクする
 
 ```
-  "dependencies": {
-    "my-project": "file:../pkg"
-  }
+cd my-project/pkg
+npm link
+cd ../www
+npm link my-project
 ```
+
 
 3. サーバ起動
 
