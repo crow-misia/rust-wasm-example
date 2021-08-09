@@ -3,7 +3,13 @@
 ## 準備
 
 1. rustのインストール
+1.1. Windowsの場合、chocolatey経由で rustup と openssl をインストールする
 
+```
+choco install rustup openssl
+```
+
+1.2. Linux/macOSの場合
 ```
 curl https://sh.rustup.rs -sSf | sh
 ```
@@ -21,7 +27,6 @@ cargo install cargo-generate
 ```
 
 4. Node.jsのインストール
-
 
 ## プロジェクト作成
 
@@ -58,7 +63,7 @@ npm install -y
 cd my-project/pkg
 npm link
 cd ../www
-npm link my-project
+npm link mandelbrot
 ```
 
 

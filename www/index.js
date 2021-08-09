@@ -1,5 +1,5 @@
 import { Mandelbrot} from "mandelbrot";
-import { memory } from "mandelbrot/mandelbrot_bg";
+import { memory } from "mandelbrot/mandelbrot_bg.wasm";
 
 const canvas = document.querySelector('canvas');
 const mandelbrot = new Mandelbrot(canvas.width, canvas.height);
