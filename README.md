@@ -73,5 +73,5 @@ npm link mandelbrot
 npm run start
 ```
 
-http://localhost:8080/にアクセス
+http://localhost:8080/ にアクセス
 
