@@ -19,7 +19,8 @@ jobs:
         node-version: [20.x]
 
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
+    - uses: ./.github/actions/cache_cargo
     - name: Cargo install
       run: |
         cargo install wasm-pack
