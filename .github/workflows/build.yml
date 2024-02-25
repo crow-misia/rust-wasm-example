@@ -1,4 +1,4 @@
-name: Rust
+name: Build
 
 on:
   push:
@@ -48,5 +48,7 @@ jobs:
           ${{ runner.os }}-${{ matrix.node-version }}-pnpm-store-
     - name: Install dependencies
       run: pnpm install --frozen-lockfile
+      working-directory: www
     - name: Run www build
       run: pnpm run build
+      working-directory: www
