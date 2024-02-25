@@ -32,8 +32,7 @@ nvm use 20
 5. pnpmのインストール
 
 ```
-m
-m
+npm install -g pnpm
 ```
 
 ## プロジェクト作成
