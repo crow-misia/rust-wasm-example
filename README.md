@@ -64,17 +64,7 @@ cd www
 pnpm install
 ```
 
-2. wasmのモジュールを、nodeのモジュールとしてリンクする
-
-```
-cd my-project/pkg
-npm link
-cd ../www
-npm link mandelbrot
-```
-
-
-3. サーバ起動
+2. サーバ起動
 
 ```
 npm run start
