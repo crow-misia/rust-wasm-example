@@ -23,10 +23,10 @@ jobs:
     - uses: ./.github/actions/cache_cargo
     - name: Cargo install
       run: |
-        cargo install wasm-pack
-        cargo install cargo-generate
+        cargo install wasm-pack -f
+        cargo install cargo-generate -f
     - name: Rust Build
-      run: cargo build --verbose
+      run: cargo build
     - name: Run Ruest tests
       run: cargo test --verbose
     - name: Run Wasm Build
