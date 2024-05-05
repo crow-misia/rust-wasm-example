@@ -67,7 +67,7 @@ pnpm install
 2. サーバ起動
 
 ```
-npm run start
+pnpm start
 ```
 
 http://localhost:8080/ にアクセス
