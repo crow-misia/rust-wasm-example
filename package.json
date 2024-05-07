@@ -1,0 +1,10 @@
+{
+  "devDependencies": {
+    "npm-check-updates": "^16.14.20"
+  },
+  "packageManager": "pnpm@9.1.0",
+  "engines": {
+    "node": ">=20",
+    "pnpm": ">=9"
+  }
+}
