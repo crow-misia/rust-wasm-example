@@ -4,11 +4,13 @@
   "scripts": {
     "build": "vite build",
     "start": "vite serve",
-    "lint": "biome check --write ."
+    "lint": "biome check --write .",
+    "ncu": "npm-check-updates -u"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.8.3",
-    "vite": "^5.3.4",
+    "terser": "^5.31.3",
+    "vite": "^5.3.5",
     "vite-plugin-top-level-await": "^1.4.2",
     "vite-plugin-wasm": "^3.3.0"
   }
