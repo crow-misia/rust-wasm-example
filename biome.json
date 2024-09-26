@@ -1,5 +1,5 @@
 {
-  "$schema": "https://biomejs.dev/schemas/1.8.3/schema.json",
+  "$schema": "https://biomejs.dev/schemas/1.9.2/schema.json",
   "organizeImports": {
     "enabled": true
   },
@@ -18,12 +18,11 @@
         "noNodejsModules": "off",
         "noSwitchDeclarations": "off",
         "noUndeclaredVariables": "off",
-        "noUnusedImports": "error"
+        "noUnusedImports": "error",
+        "useImportExtensions": "off"
       },
       "nursery": {
-        "all": true,
-        "noConsole": "off",
-        "useImportExtensions": "off"
+        "all": true
       },
       "style": {
         "all": true,
@@ -34,7 +33,8 @@
       "suspicious": {
         "all": true,
         "noExplicitAny": "off",
-        "noConsoleLog": "off"
+        "noConsoleLog": "off",
+        "noConsole": "off"
       },
       "performance": {
         "all": true

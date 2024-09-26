@@ -1,6 +1,6 @@
 # rust-wasm-example
 
-## 準備
+## 準備 (rust)
 
 1. rustのインストール
 
@@ -8,67 +8,50 @@ https://www.rust-lang.org/ja/tools/install
 
 2. wasm-packのインストール
 
-```
-cargo install wasm-pack
-```
-
-3. cargo-generateのインストール
-
-```
-cargo install cargo-generate
+```shell
+cargo install wasm-pack 
 ```
 
-4. Node.jsのインストール
+## 準備 (node.js)
+
+1. Node.jsのインストール
 
 https://nodejs.org/en/download
 
 windowsの場合、Chocolatey経由で
-```
+
+```shell
 choco install nvm
-nvm install 20
-nvm use 20
+nvm install 22
+nvm use 22
 ```
 
-5. pnpmのインストール
+2. pnpmのインストール
 
-```
+```shell
 npm install -g pnpm
 ```
 
-## プロジェクト作成
+3. viteのインストール
 
-```
-cargo generate --git https://github.com/rustwasm/wasm-pack-template.git --name my-project
-cd my-project
+```shell
+pnpm 
 ```
 
 ## ビルド
 
 ```
-wasm-pack build
+pnpm run build
+```
+
+## 実行 (ブラウザ起動)
+
+```
+pnpm run start
 ```
 
 ## テスト
 
 ```
-wasm-pack test --headless --chrome
+pnpm run test
 ```
-
-## Webページ内に展開
-
-1. Node.jsのパッケージインストール (初回のみ)
-```
-cd my-project
-pnpm create wasm-app www
-cd www
-pnpm install
-```
-
-2. サーバ起動
-
-```
-pnpm start
-```
-
-http://localhost:8080/ にアクセス
-
