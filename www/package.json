@@ -3,6 +3,7 @@
   "type": "module",
   "scripts": {
     "build": "vite build --emptyOutDir",
+    "check": "tsc",
     "lint": "biome check --write .",
     "ncu": "npm-check-updates -u"
   }
