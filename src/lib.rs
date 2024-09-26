@@ -11,7 +11,6 @@ pub struct Mandelbrot {
     pub height: u32,
 }
 
-
 fn create_buffer(width: u32, height: u32) -> Vec<u8> {
     let size = (width * height << 2) as usize;
     let mut bytes = Vec::with_capacity(size);

@@ -64,7 +64,7 @@ jobs:
     - name: Run Linter/Formatter
       if: ${{ github.event_name == 'pull_request' }}
       run: pnpm run lint
-    - name: Run Typescript check
+    - name: Run check
       if: ${{ github.event_name == 'pull_request' }}
       run: pnpm run check
     - name: Run Tests
