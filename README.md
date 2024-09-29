@@ -32,10 +32,10 @@ nvm use 22
 npm install -g pnpm
 ```
 
-3. viteのインストール
+3. 依存ライブラリインストール
 
 ```shell
-pnpm 
+pnpm install
 ```
 
 ## ビルド
