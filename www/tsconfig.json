@@ -13,13 +13,14 @@
     "paths": {
       "@wasm/*": ["../pkg/*"]
     },
-    "types": ["@types/node"],
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "incremental": true
+    "incremental": true,
+    "newLine": "lf",
+    "types": ["@types/node"]
   },
   "exclude": ["node_modules", "dist"]
 }

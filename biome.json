@@ -1,5 +1,5 @@
 {
-  "$schema": "https://biomejs.dev/schemas/1.9.2/schema.json",
+  "$schema": "https://biomejs.dev/schemas/1.9.3/schema.json",
   "organizeImports": {
     "enabled": true
   },
@@ -17,12 +17,14 @@
         "all": true,
         "noNodejsModules": "off",
         "noSwitchDeclarations": "off",
+        "noUndeclaredDependencies": "off",
         "noUndeclaredVariables": "off",
         "noUnusedImports": "error",
         "useImportExtensions": "off"
       },
       "nursery": {
-        "all": true
+        "all": true,
+        "useExplicitFunctionReturnType": "off"
       },
       "style": {
         "all": true,
@@ -42,10 +44,10 @@
       "security": {
         "all": true
       }
-    },
-    "ignore": ["jest-extended.d.ts"]
+    }
   },
   "files": {
+    "ignoreUnknown": true,
     "ignore": ["dist/*", "build/*"]
   },
   "formatter": {
