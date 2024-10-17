@@ -15,8 +15,8 @@ importers:
         specifier: 22.7.6
         version: 22.7.6
       npm-check-updates:
-        specifier: 17.1.3
-        version: 17.1.3
+        specifier: 17.1.4
+        version: 17.1.4
       terser:
         specifier: 5.36.0
         version: 5.36.0
@@ -463,8 +463,8 @@ packages:
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
 
-  npm-check-updates@17.1.3:
-    resolution: {integrity: sha512-4uDLBWPuDHT5KLieIJ20FoAB8yqJejmupI42wPyfObgQOBbPAikQSwT73afDwREvhuxYrRDqlRvxTMSfvO+L8A==}
+  npm-check-updates@17.1.4:
+    resolution: {integrity: sha512-crOUeN2GngqlkRCFQ/zi1zsneWd9IGZgIfAWYGAuhYiPnfbBTmJBL7Yq1wI0e1dsW8CfWc+h348WmfCREqeOBA==}
     engines: {node: ^18.18.0 || >=20.0.0, npm: '>=8.12.1'}
     hasBin: true
 
@@ -850,7 +850,7 @@ snapshots:
 
   nanoid@3.3.7: {}
 
-  npm-check-updates@17.1.3: {}
+  npm-check-updates@17.1.4: {}
 
   picocolors@1.1.1: {}
 
