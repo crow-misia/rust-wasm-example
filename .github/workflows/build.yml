@@ -17,7 +17,6 @@ permissions:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     strategy:
@@ -68,15 +67,15 @@ jobs:
         if: ${{ github.event_name == 'pull_request' }}
         run: pnpm run lint
 
+      - name: Run build
+        run: pnpm run build
+
       - name: Run check
         if: ${{ github.event_name == 'pull_request' }}
         run: pnpm run check
 
       - name: Run Tests
         run: pnpm run test
-
-      - name: Run build
-        run: pnpm run build
 
       - name: Commit changes
         if: ${{ github.event_name == 'pull_request' }}
