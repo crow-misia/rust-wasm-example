@@ -18,43 +18,65 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [22.x]
+        node-version: [22]
 
     steps:
-    - uses: actions/checkout@v4
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v4
-      with:
-        node-version: ${{ matrix.node-version }}
-    - name: Install pnpm
-      uses: pnpm/action-setup@v4
-      with:
-        run_install: false
-    - name: Get pnpm store directory
-      shell: bash
-      run: |
-        echo "STORE_PATH=$(pnpm store path --silent)" >> $GITHUB_ENV
-    - name: Restore cache pnpm-store
-      id: node_modules_cache
-      uses: actions/cache@v4
-      with:
-        path: ${{ env.STORE_PATH }}
-        key: ${{ runner.os }}-${{ matrix.node-version }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
-        restore-keys: |
-          ${{ runner.os }}-${{ matrix.node-version }}-pnpm-store-
-    - name: Install dependencies
-      run: pnpm install --frozen-lockfile
-    - uses: Swatinem/rust-cache@v2
-    - uses: taiki-e/install-action@wasm-pack
-    - name: Run biome migrate
-      run: pnpm biome migrate --write
-    - name: Run Linter/Formatter
-      if: ${{ github.event_name == 'pull_request' }}
-      run: pnpm run lint
-    - name: Run check
-      if: ${{ github.event_name == 'pull_request' }}
-      run: pnpm run check
-    - name: Run Tests
-      run: pnpm run test
-    - name: Run build
-      run: pnpm run build
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          run_install: false
+
+      - name: Install Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: "pnpm"
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Cache Restore/Save Rust
+        uses: Swatinem/rust-cache@v2
+
+      - name: Install Rust toolchain
+        uses: dtolnay/rust-toolchain@stable
+        with:
+          components: clippy
+
+      - name: Install wasm-pack
+        uses: taiki-e/install-action@v2
+        with:
+          tool: wasm-pack
+
+      - uses: giraffate/clippy-action@v1
+        if: ${{ github.event_name == 'pull_request' }}
+        with:
+          reporter: 'github-pr-review'
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Run biome migrate
+        run: pnpm biome migrate --write
+
+      - name: Run Linter/Formatter
+        if: ${{ github.event_name == 'pull_request' }}
+        run: pnpm run lint
+
+      - name: Run check
+        if: ${{ github.event_name == 'pull_request' }}
+        run: pnpm run check
+
+      - name: Run Tests
+        run: pnpm run test
+
+      - name: Run build
+        run: pnpm run build
+
+      - name: Commit changes
+        if: ${{ github.event_name == 'pull_request' }}
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_options: "--no-verify --signoff"
+          commit_message: "ci(backend): Apply formatting changes"
