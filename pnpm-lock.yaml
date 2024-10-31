@@ -12,8 +12,8 @@ importers:
         specifier: 1.9.4
         version: 1.9.4
       '@types/node':
-        specifier: 22.8.4
-        version: 22.8.4
+        specifier: 22.8.5
+        version: 22.8.5
       npm-check-updates:
         specifier: 17.1.9
         version: 17.1.9
@@ -25,16 +25,16 @@ importers:
         version: 5.6.3
       vite:
         specifier: 5.4.10
-        version: 5.4.10(@types/node@22.8.4)(terser@5.36.0)
+        version: 5.4.10(@types/node@22.8.5)(terser@5.36.0)
       vite-plugin-top-level-await:
         specifier: 1.4.4
-        version: 1.4.4(rollup@4.24.0)(vite@5.4.10(@types/node@22.8.4)(terser@5.36.0))
+        version: 1.4.4(rollup@4.24.0)(vite@5.4.10(@types/node@22.8.5)(terser@5.36.0))
       vite-plugin-wasm:
         specifier: 3.3.0
-        version: 3.3.0(vite@5.4.10(@types/node@22.8.4)(terser@5.36.0))
+        version: 3.3.0(vite@5.4.10(@types/node@22.8.5)(terser@5.36.0))
       vite-tsconfig-paths:
         specifier: 5.0.1
-        version: 5.0.1(typescript@5.6.3)(vite@5.4.10(@types/node@22.8.4)(terser@5.36.0))
+        version: 5.0.1(typescript@5.6.3)(vite@5.4.10(@types/node@22.8.5)(terser@5.36.0))
 
   www: {}
 
@@ -419,8 +419,8 @@ packages:
   '@types/estree@1.0.6':
     resolution: {integrity: sha512-AYnb1nQyY49te+VRAVgmzfcgjYS91mY5P0TKUDCLEM+gNnA+3T6rWITXRLYCpahpqSQbN5cE+gHpnPyXjHWxcw==}
 
-  '@types/node@22.8.4':
-    resolution: {integrity: sha512-SpNNxkftTJOPk0oN+y2bIqurEXHTA2AOZ3EJDDKeJ5VzkvvORSvmQXGQarcOzWV1ac7DCaPBEdMDxBsM+d8jWw==}
+  '@types/node@22.8.5':
+    resolution: {integrity: sha512-5iYk6AMPtsMbkZqCO1UGF9W5L38twq11S2pYWkybGHH2ogPUvXWNlQqJBzuEZWKj/WRH+QTeiv6ySWqJtvIEgA==}
 
   acorn@8.13.0:
     resolution: {integrity: sha512-8zSiw54Oxrdym50NlZ9sUusyO1Z1ZchgRLWRaK6c86XJFClyCgFKetdowBg5bKxyp/u+CDBJG4Mpp0m3HLZl9w==}
@@ -801,7 +801,7 @@ snapshots:
 
   '@types/estree@1.0.6': {}
 
-  '@types/node@22.8.4':
+  '@types/node@22.8.5':
     dependencies:
       undici-types: 6.19.8
 
@@ -908,37 +908,37 @@ snapshots:
 
   uuid@10.0.0: {}
 
-  vite-plugin-top-level-await@1.4.4(rollup@4.24.0)(vite@5.4.10(@types/node@22.8.4)(terser@5.36.0)):
+  vite-plugin-top-level-await@1.4.4(rollup@4.24.0)(vite@5.4.10(@types/node@22.8.5)(terser@5.36.0)):
     dependencies:
       '@rollup/plugin-virtual': 3.0.2(rollup@4.24.0)
       '@swc/core': 1.7.36
       uuid: 10.0.0
-      vite: 5.4.10(@types/node@22.8.4)(terser@5.36.0)
+      vite: 5.4.10(@types/node@22.8.5)(terser@5.36.0)
     transitivePeerDependencies:
       - '@swc/helpers'
       - rollup
 
-  vite-plugin-wasm@3.3.0(vite@5.4.10(@types/node@22.8.4)(terser@5.36.0)):
+  vite-plugin-wasm@3.3.0(vite@5.4.10(@types/node@22.8.5)(terser@5.36.0)):
     dependencies:
-      vite: 5.4.10(@types/node@22.8.4)(terser@5.36.0)
+      vite: 5.4.10(@types/node@22.8.5)(terser@5.36.0)
 
-  vite-tsconfig-paths@5.0.1(typescript@5.6.3)(vite@5.4.10(@types/node@22.8.4)(terser@5.36.0)):
+  vite-tsconfig-paths@5.0.1(typescript@5.6.3)(vite@5.4.10(@types/node@22.8.5)(terser@5.36.0)):
     dependencies:
       debug: 4.3.7
       globrex: 0.1.2
       tsconfck: 3.1.4(typescript@5.6.3)
     optionalDependencies:
-      vite: 5.4.10(@types/node@22.8.4)(terser@5.36.0)
+      vite: 5.4.10(@types/node@22.8.5)(terser@5.36.0)
     transitivePeerDependencies:
       - supports-color
       - typescript
 
-  vite@5.4.10(@types/node@22.8.4)(terser@5.36.0):
+  vite@5.4.10(@types/node@22.8.5)(terser@5.36.0):
     dependencies:
       esbuild: 0.21.5
       postcss: 8.4.47
       rollup: 4.24.0
     optionalDependencies:
-      '@types/node': 22.8.4
+      '@types/node': 22.8.5
       fsevents: 2.3.3
       terser: 5.36.0
