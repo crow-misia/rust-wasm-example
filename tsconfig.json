@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "ES2018",
+    "target": "ES2022",
     "module": "ESNext",
     "moduleResolution": "Bundler",
     "lib": ["ESNext", "ESNext.AsyncIterable", "DOM"],
@@ -11,7 +11,7 @@
     "noEmit": true,
     "baseUrl": ".",
     "paths": {
-      "@wasm/*": ["../pkg/*"]
+      "@wasm/*": ["./pkg/*"]
     },
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
