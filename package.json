@@ -18,11 +18,11 @@
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
-    "@types/node": "22.8.6",
+    "@types/node": "22.8.7",
     "@types/react": "18.3.12",
     "@types/react-dom": "18.3.1",
     "@vitejs/plugin-react-swc": "3.7.1",
-    "npm-check-updates": "17.1.9",
+    "npm-check-updates": "17.1.10",
     "react": "18.3.1",
     "react-dom": "18.3.1",
     "terser": "5.36.0",
