@@ -27,7 +27,7 @@
     "react-dom": "19.0.0",
     "terser": "5.37.0",
     "typescript": "5.7.2",
-    "vite": "6.0.5",
+    "vite": "6.0.6",
     "vite-plugin-top-level-await": "1.4.4",
     "vite-plugin-wasm": "3.4.1",
     "vite-tsconfig-paths": "5.1.4"
