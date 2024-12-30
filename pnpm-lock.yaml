@@ -24,8 +24,8 @@ importers:
         specifier: 3.7.2
         version: 3.7.2(vite@6.0.6(@types/node@22.10.2)(terser@5.37.0))
       npm-check-updates:
-        specifier: 17.1.12
-        version: 17.1.12
+        specifier: 17.1.13
+        version: 17.1.13
       react:
         specifier: 19.0.0
         version: 19.0.0
@@ -593,8 +593,8 @@ packages:
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
 
-  npm-check-updates@17.1.12:
-    resolution: {integrity: sha512-j1+ln9wXDNLgTSMrEF9ja4KyYq4yBF8FuuU3irFtMSnss4pYjvYfQESz8CV82Rk1daXjbtaAWF9pZZKzujhoBA==}
+  npm-check-updates@17.1.13:
+    resolution: {integrity: sha512-m9Woo2J5XVab0VcQpYvrQ0hx3ySI1mGbiHR595mc6Lr1/FIaTWvv+oU+T1WKSfXRiluKC/V5P6Bdk5agaYpqqg==}
     engines: {node: ^18.18.0 || >=20.0.0, npm: '>=8.12.1'}
     hasBin: true
 
@@ -1085,7 +1085,7 @@ snapshots:
 
   nanoid@3.3.8: {}
 
-  npm-check-updates@17.1.12: {}
+  npm-check-updates@17.1.13: {}
 
   picocolors@1.1.1: {}
 
