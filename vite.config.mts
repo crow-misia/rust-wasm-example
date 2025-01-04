@@ -22,6 +22,7 @@ export default defineConfig(({ mode }) => {
       tsconfigPaths(),
     ],
     build: {
+      target: 'es2022',
       sourcemap: mode === 'develop',
       minify: mode === 'production' ? 'terser' : false,
       outDir,
