@@ -25,15 +25,15 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
 
       - name: Install pnpm
-        uses: pnpm/action-setup@v4
+        uses: pnpm/action-setup@fe02b34f77f8bc703788d5817da081398fad5dd2 # v4.0.0
         with:
           run_install: false
 
       - name: Install Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@39370e3970a6d050c480ffad4ff0ed4d3fdee5af # v4.1.0
         with:
           node-version: ${{ matrix.node-version }}
           cache: "pnpm"
@@ -42,19 +42,19 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: Cache Restore/Save Rust
-        uses: Swatinem/rust-cache@v2
+        uses: Swatinem/rust-cache@f0deed1e0edfc6a9be95417288c0e1099b1eeec3 # v2.7.7
 
       - name: Install Rust toolchain
-        uses: dtolnay/rust-toolchain@stable
+        uses: dtolnay/rust-toolchain@1ff72ee08e3cb84d84adba594e0a297990fc1ed3 # stable
         with:
           components: clippy
 
       - name: Install wasm-pack
-        uses: taiki-e/install-action@v2
+        uses: taiki-e/install-action@7e1dca9e0c58340bd342a8aa00ad82587936018d # v2.47.23
         with:
           tool: wasm-pack
 
-      - uses: giraffate/clippy-action@v1
+      - uses: giraffate/clippy-action@94e9bd8deab2618756ec5380f12eb35bcb0a88ca # v1
         if: ${{ github.event_name == 'pull_request' }}
         with:
           reporter: 'github-pr-review'
@@ -79,7 +79,7 @@ jobs:
 
       - name: Commit changes
         if: ${{ github.event_name == 'pull_request' }}
-        uses: stefanzweifel/git-auto-commit-action@v5
+        uses: stefanzweifel/git-auto-commit-action@e348103e9026cc0eee72ae06630dbe30c8bf7a79 # v5.1.0
         with:
           commit_options: "--no-verify --signoff"
           commit_message: "ci(backend): Apply formatting changes"
