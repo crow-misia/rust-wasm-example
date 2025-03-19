@@ -43,7 +43,7 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: Cache Restore/Save Rust
-        uses: Swatinem/rust-cache@f0deed1e0edfc6a9be95417288c0e1099b1eeec3 # v2.7.7
+        uses: Swatinem/rust-cache@9d47c6ad4b02e050fd481d890b2ea34778fd09d6 # v2.7.8
 
       - name: Install Rust toolchain
         uses: dtolnay/rust-toolchain@1ff72ee08e3cb84d84adba594e0a297990fc1ed3 # stable
@@ -51,7 +51,7 @@ jobs:
           components: clippy
 
       - name: Install wasm-pack
-        uses: taiki-e/install-action@62730e3d4f6bd81d824694e963e06d7153968c93 # v2.49.29
+        uses: taiki-e/install-action@37bdc826eaedac215f638a96472df572feab0f9b # v2.49.30
         with:
           tool: wasm-pack
 
