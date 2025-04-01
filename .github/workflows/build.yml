@@ -51,7 +51,7 @@ jobs:
           components: clippy
 
       - name: Install wasm-pack
-        uses: taiki-e/install-action@6aca1cfa12ef3a6b98ee8c70e0171bfa067604f5 # v2.49.39
+        uses: taiki-e/install-action@e488b1709febfed28832a5b2fcbd6d0a8d23f2af # v2.49.41
         with:
           tool: wasm-pack
 
