@@ -12,17 +12,17 @@ importers:
         specifier: 1.9.4
         version: 1.9.4
       '@types/node':
-        specifier: 22.14.0
-        version: 22.14.0
+        specifier: 22.14.1
+        version: 22.14.1
       '@types/react':
-        specifier: 19.1.0
-        version: 19.1.0
+        specifier: 19.1.1
+        version: 19.1.1
       '@types/react-dom':
         specifier: 19.1.2
-        version: 19.1.2(@types/react@19.1.0)
+        version: 19.1.2(@types/react@19.1.1)
       '@vitejs/plugin-react-swc':
         specifier: 3.8.1
-        version: 3.8.1(vite@6.2.6(@types/node@22.14.0)(terser@5.39.0))
+        version: 3.8.1(vite@6.2.6(@types/node@22.14.1)(terser@5.39.0))
       npm-check-updates:
         specifier: 17.1.18
         version: 17.1.18
@@ -40,16 +40,16 @@ importers:
         version: 5.8.3
       vite:
         specifier: 6.2.6
-        version: 6.2.6(@types/node@22.14.0)(terser@5.39.0)
+        version: 6.2.6(@types/node@22.14.1)(terser@5.39.0)
       vite-plugin-top-level-await:
         specifier: 1.5.0
-        version: 1.5.0(rollup@4.39.0)(vite@6.2.6(@types/node@22.14.0)(terser@5.39.0))
+        version: 1.5.0(rollup@4.39.0)(vite@6.2.6(@types/node@22.14.1)(terser@5.39.0))
       vite-plugin-wasm:
         specifier: 3.4.1
-        version: 3.4.1(vite@6.2.6(@types/node@22.14.0)(terser@5.39.0))
+        version: 3.4.1(vite@6.2.6(@types/node@22.14.1)(terser@5.39.0))
       vite-tsconfig-paths:
         specifier: 5.1.4
-        version: 5.1.4(typescript@5.8.3)(vite@6.2.6(@types/node@22.14.0)(terser@5.39.0))
+        version: 5.1.4(typescript@5.8.3)(vite@6.2.6(@types/node@22.14.1)(terser@5.39.0))
 
 packages:
 
@@ -464,16 +464,16 @@ packages:
   '@types/estree@1.0.7':
     resolution: {integrity: sha512-w28IoSUCJpidD/TGviZwwMJckNESJZXFu7NBZ5YJ4mEUnNraUn9Pm8HSZm/jDF1pDWYKspWE7oVphigUPRakIQ==}
 
-  '@types/node@22.14.0':
-    resolution: {integrity: sha512-Kmpl+z84ILoG+3T/zQFyAJsU6EPTmOCj8/2+83fSN6djd6I4o7uOuGIH6vq3PrjY5BGitSbFuMN18j3iknubbA==}
+  '@types/node@22.14.1':
+    resolution: {integrity: sha512-u0HuPQwe/dHrItgHHpmw3N2fYCR6x4ivMNbPHRkBVP4CvN+kiRrKHWk3i8tXiO/joPwXLMYvF9TTF0eqgHIuOw==}
 
   '@types/react-dom@19.1.2':
     resolution: {integrity: sha512-XGJkWF41Qq305SKWEILa1O8vzhb3aOo3ogBlSmiqNko/WmRb6QIaweuZCXjKygVDXpzXb5wyxKTSOsmkuqj+Qw==}
     peerDependencies:
       '@types/react': ^19.0.0
 
-  '@types/react@19.1.0':
-    resolution: {integrity: sha512-UaicktuQI+9UKyA4njtDOGBD/67t8YEBt2xdfqu8+gP9hqPUPsiXlNPcpS2gVdjmis5GKPG3fCxbQLVgxsQZ8w==}
+  '@types/react@19.1.1':
+    resolution: {integrity: sha512-ePapxDL7qrgqSF67s0h9m412d9DbXyC1n59O2st+9rjuuamWsZuD2w55rqY12CbzsZ7uVXb5Nw0gEp9Z8MMutQ==}
 
   '@vitejs/plugin-react-swc@3.8.1':
     resolution: {integrity: sha512-aEUPCckHDcFyxpwFm0AIkbtv6PpUp3xTb9wYGFjtABynXjCYKkWoxX0AOK9NT9XCrdk6mBBUOeHQS+RKdcNO1A==}
@@ -901,22 +901,22 @@ snapshots:
 
   '@types/estree@1.0.7': {}
 
-  '@types/node@22.14.0':
+  '@types/node@22.14.1':
     dependencies:
       undici-types: 6.21.0
 
-  '@types/react-dom@19.1.2(@types/react@19.1.0)':
+  '@types/react-dom@19.1.2(@types/react@19.1.1)':
     dependencies:
-      '@types/react': 19.1.0
+      '@types/react': 19.1.1
 
-  '@types/react@19.1.0':
+  '@types/react@19.1.1':
     dependencies:
       csstype: 3.1.3
 
-  '@vitejs/plugin-react-swc@3.8.1(vite@6.2.6(@types/node@22.14.0)(terser@5.39.0))':
+  '@vitejs/plugin-react-swc@3.8.1(vite@6.2.6(@types/node@22.14.1)(terser@5.39.0))':
     dependencies:
       '@swc/core': 1.11.16
-      vite: 6.2.6(@types/node@22.14.0)(terser@5.39.0)
+      vite: 6.2.6(@types/node@22.14.1)(terser@5.39.0)
     transitivePeerDependencies:
       - '@swc/helpers'
 
@@ -1040,37 +1040,37 @@ snapshots:
 
   uuid@10.0.0: {}
 
-  vite-plugin-top-level-await@1.5.0(rollup@4.39.0)(vite@6.2.6(@types/node@22.14.0)(terser@5.39.0)):
+  vite-plugin-top-level-await@1.5.0(rollup@4.39.0)(vite@6.2.6(@types/node@22.14.1)(terser@5.39.0)):
     dependencies:
       '@rollup/plugin-virtual': 3.0.2(rollup@4.39.0)
       '@swc/core': 1.11.16
       uuid: 10.0.0
-      vite: 6.2.6(@types/node@22.14.0)(terser@5.39.0)
+      vite: 6.2.6(@types/node@22.14.1)(terser@5.39.0)
     transitivePeerDependencies:
       - '@swc/helpers'
       - rollup
 
-  vite-plugin-wasm@3.4.1(vite@6.2.6(@types/node@22.14.0)(terser@5.39.0)):
+  vite-plugin-wasm@3.4.1(vite@6.2.6(@types/node@22.14.1)(terser@5.39.0)):
     dependencies:
-      vite: 6.2.6(@types/node@22.14.0)(terser@5.39.0)
+      vite: 6.2.6(@types/node@22.14.1)(terser@5.39.0)
 
-  vite-tsconfig-paths@5.1.4(typescript@5.8.3)(vite@6.2.6(@types/node@22.14.0)(terser@5.39.0)):
+  vite-tsconfig-paths@5.1.4(typescript@5.8.3)(vite@6.2.6(@types/node@22.14.1)(terser@5.39.0)):
     dependencies:
       debug: 4.4.0
       globrex: 0.1.2
       tsconfck: 3.1.5(typescript@5.8.3)
     optionalDependencies:
-      vite: 6.2.6(@types/node@22.14.0)(terser@5.39.0)
+      vite: 6.2.6(@types/node@22.14.1)(terser@5.39.0)
     transitivePeerDependencies:
       - supports-color
       - typescript
 
-  vite@6.2.6(@types/node@22.14.0)(terser@5.39.0):
+  vite@6.2.6(@types/node@22.14.1)(terser@5.39.0):
     dependencies:
       esbuild: 0.25.2
       postcss: 8.5.3
       rollup: 4.39.0
     optionalDependencies:
-      '@types/node': 22.14.0
+      '@types/node': 22.14.1
       fsevents: 2.3.3
       terser: 5.39.0
