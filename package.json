@@ -22,7 +22,7 @@
     "@types/react": "19.1.2",
     "@types/react-dom": "19.1.2",
     "@vitejs/plugin-react-swc": "3.9.0",
-    "npm-check-updates": "17.1.18",
+    "npm-check-updates": "18.0.0",
     "react": "19.1.0",
     "react-dom": "19.1.0",
     "terser": "5.39.0",
