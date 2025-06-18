@@ -26,6 +26,7 @@ export default defineConfig(({ mode }) => {
       sourcemap: mode === 'develop',
       minify: mode === 'production' ? 'terser' : false,
       outDir,
+      emptyOutDir: true,
     },
     define: {
       global: 'window', // global指定しないと取得不可

@@ -1,20 +1,15 @@
 {
-  "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
-  "organizeImports": {
-    "enabled": true
-  },
+  "$schema": "https://biomejs.dev/schemas/2.0.0/schema.json",
+  "assist": { "actions": { "source": { "organizeImports": "on" } } },
   "linter": {
     "enabled": true,
     "rules": {
-      "all": true,
       "complexity": {
-        "all": true,
         "noExcessiveCognitiveComplexity": "off",
         "useSimplifiedLogicExpression": "off",
         "noUselessLoneBlockStatements": "off"
       },
       "correctness": {
-        "all": true,
         "noNodejsModules": "off",
         "noSwitchDeclarations": "off",
         "noUndeclaredDependencies": "off",
@@ -23,32 +18,34 @@
         "useImportExtensions": "off"
       },
       "nursery": {
-        "all": true,
         "useExplicitType": "off"
       },
       "style": {
-        "all": true,
         "noDefaultExport": "off",
-        "noNamespaceImport": "off",
-        "useNamingConvention": "off"
+        "useNamingConvention": "off",
+        "noParameterAssign": "error",
+        "useAsConstAssertion": "error",
+        "useDefaultParameterLast": "error",
+        "useEnumInitializers": "error",
+        "useSelfClosingElements": "error",
+        "useSingleVarDeclarator": "error",
+        "noUnusedTemplateLiteral": "error",
+        "useNumberNamespace": "error",
+        "noInferrableTypes": "error",
+        "noUselessElse": "error"
       },
       "suspicious": {
-        "all": true,
         "noExplicitAny": "off",
-        "noConsoleLog": "off",
         "noConsole": "off"
       },
       "performance": {
-        "all": true
-      },
-      "security": {
-        "all": true
+        "noNamespaceImport": "off"
       }
     }
   },
   "files": {
     "ignoreUnknown": true,
-    "ignore": ["dist/*", "build/*"]
+    "includes": ["**", "!**/dist", "!**/build"]
   },
   "formatter": {
     "enabled": true,

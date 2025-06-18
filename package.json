@@ -4,7 +4,7 @@
     "preinstall": "pnpm dlx only-allow pnpm",
     "build": "pnpm run --sequential '/^build:.*/'",
     "build:wasm": "wasm-pack build --release -t bundler",
-    "build:web": "vite build --emptyOutDir",
+    "build:web": "vite build",
     "check": "pnpm run '/^check:.*/'",
     "check:wasm": "cargo clippy --all-targets --all-features",
     "check:web": "tsc",
@@ -32,7 +32,7 @@
     "vite-plugin-wasm": "3.4.1",
     "vite-tsconfig-paths": "5.1.4"
   },
-  "packageManager": "pnpm@10.11.0",
+  "packageManager": "pnpm@10.12.1",
   "engines": {
     "node": ">=20",
     "pnpm": ">=9"
