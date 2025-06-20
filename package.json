@@ -4,7 +4,7 @@
     "preinstall": "pnpm dlx only-allow pnpm",
     "build": "pnpm run --sequential '/^build:.*/'",
     "build:wasm": "wasm-pack build --release -t bundler",
-    "build:web": "vite build --emptyOutDir",
+    "build:web": "vite build",
     "check": "pnpm run '/^check:.*/'",
     "check:wasm": "cargo clippy --all-targets --all-features",
     "check:web": "tsc",
@@ -17,7 +17,7 @@
     "ncu": "npm-check-updates -u"
   },
   "devDependencies": {
-    "@biomejs/biome": "1.9.4",
+    "@biomejs/biome": "2.0.0",
     "@types/node": "24.0.3",
     "@types/react": "19.1.8",
     "@types/react-dom": "19.1.6",
@@ -25,14 +25,13 @@
     "npm-check-updates": "18.0.1",
     "react": "19.1.0",
     "react-dom": "19.1.0",
-    "terser": "5.42.0",
+    "terser": "5.43.0",
     "typescript": "5.8.3",
     "vite": "6.3.5",
-    "vite-plugin-top-level-await": "1.5.0",
     "vite-plugin-wasm": "3.4.1",
     "vite-tsconfig-paths": "5.1.4"
   },
-  "packageManager": "pnpm@10.11.0",
+  "packageManager": "pnpm@10.12.1",
   "engines": {
     "node": ">=20",
     "pnpm": ">=9"
