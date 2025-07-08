@@ -17,7 +17,7 @@
     "ncu": "npm-check-updates -u"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.0.6",
+    "@biomejs/biome": "2.1.0",
     "@types/node": "24.0.10",
     "@types/react": "19.1.8",
     "@types/react-dom": "19.1.6",
@@ -27,7 +27,7 @@
     "react-dom": "19.1.0",
     "terser": "5.43.1",
     "typescript": "5.8.3",
-    "vite": "7.0.2",
+    "vite": "7.0.3",
     "vite-plugin-wasm": "3.4.1",
     "vite-tsconfig-paths": "5.1.4"
   },
