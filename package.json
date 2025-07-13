@@ -18,10 +18,13 @@
   },
   "devDependencies": {
     "@biomejs/biome": "2.1.1",
+    "@commitlint/cli": "19.8.1",
+    "@commitlint/config-conventional": "19.8.1",
     "@types/node": "24.0.13",
     "@types/react": "19.1.8",
     "@types/react-dom": "19.1.6",
     "@vitejs/plugin-react-swc": "3.10.2",
+    "lefthook": "1.12.2",
     "npm-check-updates": "18.0.1",
     "react": "19.1.0",
     "react-dom": "19.1.0",
@@ -31,9 +34,11 @@
     "vite-plugin-wasm": "3.5.0",
     "vite-tsconfig-paths": "5.1.4"
   },
-  "packageManager": "pnpm@10.12.1",
+  "packageManager": "pnpm@10.13.1",
   "engines": {
-    "node": ">=20",
-    "pnpm": ">=9"
+    "node": ">=20.x",
+    "npm": "use pnpm",
+    "pnpm": ">=9.x",
+    "yarn": "use pnpm"
   }
 }

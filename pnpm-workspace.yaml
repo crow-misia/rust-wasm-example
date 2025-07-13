@@ -1,5 +1,7 @@
 ignoredBuiltDependencies:
   - '@biomejs/biome'
+
 onlyBuiltDependencies:
   - '@swc/core'
   - esbuild
+  - lefthook
