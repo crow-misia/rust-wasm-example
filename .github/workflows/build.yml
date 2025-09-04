@@ -34,7 +34,7 @@ jobs:
           run_install: false
 
       - name: Install Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
+        uses: actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444 # v5.0.0
         with:
           node-version: ${{ matrix.node-version }}
           cache: "pnpm"
@@ -51,7 +51,7 @@ jobs:
           components: clippy
 
       - name: Install wasm-pack
-        uses: taiki-e/install-action@6e092deb71cc9ba464addeccefe34c0d06921585 # v2.58.31
+        uses: taiki-e/install-action@133a13585eb96b576726757d256e9531cd6dddf2 # v2.58.32
         with:
           tool: wasm-pack
 
