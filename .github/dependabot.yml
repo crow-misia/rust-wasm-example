@@ -12,7 +12,8 @@ updates:
         update-types: ["version-update:semver-major"]
     schedule:
       interval: "daily"
-
+    cooldown:
+      default-days: 7
   - package-ecosystem: "npm"
     directory: "/"
     groups:
@@ -21,7 +22,8 @@ updates:
           - "*"
     schedule:
       interval: "daily"
-
+    cooldown:
+      default-days: 7
   - package-ecosystem: "cargo"
     directory: "/"
     groups:
@@ -30,4 +32,5 @@ updates:
           - "*"
     schedule:
       interval: "daily"
-
+    cooldown:
+      default-days: 7
