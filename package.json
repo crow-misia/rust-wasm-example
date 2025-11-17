@@ -24,7 +24,7 @@
     "@types/react": "19.2.2",
     "@types/react-dom": "19.2.2",
     "@vitejs/plugin-react-swc": "4.2.1",
-    "lefthook": "2.0.2",
+    "lefthook": "2.0.3",
     "npm-check-updates": "19.1.2",
     "react": "19.2.0",
     "react-dom": "19.2.0",
