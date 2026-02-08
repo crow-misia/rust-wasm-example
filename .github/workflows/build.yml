@@ -64,9 +64,6 @@ jobs:
           reporter: 'github-pr-review'
           github_token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Run biome migrate
-        run: pnpm biome migrate --write
-
       - name: Run Linter/Formatter
         if: ${{ github.event_name == 'pull_request' }}
         run: pnpm run lint
