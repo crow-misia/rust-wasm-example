@@ -9,13 +9,7 @@ brew install mise
 mise install
 ```
 
-2. wasm-packのインストール
-
-```shell
-cargo install wasm-pack 
-```
-
-3. 依存ライブラリインストール
+2. 依存ライブラリインストール
 
 ```shell
 pnpm install

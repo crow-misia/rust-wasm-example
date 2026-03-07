@@ -1,10 +1,12 @@
 [tools]
+"cargo:wasm-pack" = "latest"
 lefthook = "latest"
 node = "24"
 "npm:@commitlint/cli" = "latest"
 "npm:@commitlint/config-conventional" = "latest"
 "npm:npm-check-updates" = "latest"
 pnpm = "latest"
+rust = "latest"
 
 [tasks.ncu]
 run = "npm-check-updates -u"
