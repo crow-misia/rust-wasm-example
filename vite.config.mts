@@ -23,6 +23,9 @@ export default defineConfig(({ mode }) => {
       outDir: resolve(import.meta.dirname, './dist'),
       emptyOutDir: true,
     },
+    optimizeDeps: {
+      exclude: ['@wasm/mandelbrot_bg']
+    },
     resolve: {
       tsconfigPaths: true,
     },

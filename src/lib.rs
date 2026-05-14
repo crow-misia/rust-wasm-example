@@ -1,6 +1,15 @@
-mod utils;
-
+use std::panic;
 use wasm_bindgen::prelude::*;
+
+#[wasm_bindgen(start)]
+pub fn main_js() {
+    panic::set_hook(Box::new(console_error_panic_hook_custom));
+}
+
+fn console_error_panic_hook_custom(info: &panic::PanicHookInfo) {
+    let msg = info.to_string();
+    web_sys::console::error_1(&JsValue::from_str(&msg));
+}
 
 #[wasm_bindgen]
 pub struct Mandelbrot {
