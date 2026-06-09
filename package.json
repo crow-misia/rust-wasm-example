@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "postinstall": "biome migrate --write",
+    "prepare": "biome migrate --write",
     "build": "pnpm run --sequential '/^build:.*/'",
     "build:wasm": "wasm-pack build --release -t bundler",
     "build:web": "vite build",
