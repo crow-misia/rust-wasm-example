@@ -7,7 +7,7 @@ updates:
         patterns:
           - "*"
     schedule:
-      interval: "daily"
+      interval: "monthly"
     cooldown:
       default-days: 7
   - package-ecosystem: "npm"
@@ -17,7 +17,7 @@ updates:
         patterns:
           - "*"
     schedule:
-      interval: "daily"
+      interval: "monthly"
     cooldown:
       default-days: 7
   - package-ecosystem: "cargo"
@@ -27,6 +27,6 @@ updates:
         patterns:
           - "*"
     schedule:
-      interval: "daily"
+      interval: "monthly"
     cooldown:
       default-days: 7

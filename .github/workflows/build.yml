@@ -6,11 +6,11 @@ on:
   push:
     branches: ['main']
 
-env:
-  CARGO_TERM_COLOR: always
-  RUSTFLAGS: "-Dwarnings"
-
 permissions: {}
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
 
 jobs:
   build:
@@ -21,9 +21,13 @@ jobs:
       contents: read
       pull-requests: write
 
+    env:
+      CARGO_TERM_COLOR: always
+      RUSTFLAGS: "-Dwarnings"
+
     strategy:
       matrix:
-        node-version: [24]
+        node-version: [26]
 
     steps:
       - name: Checkout
@@ -71,5 +75,5 @@ jobs:
       - name: Run check
         run: pnpm run check
 
-      - name: Run Tests
+      - name: Run Unit tests
         run: pnpm run test
